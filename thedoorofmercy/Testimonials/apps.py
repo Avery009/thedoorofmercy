@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class TestimonialsConfig(AppConfig):
+class PostsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'Testimonials'
+    name = 'Posts'

@@ -7,10 +7,10 @@ def home(request):
 	template = loader.get_template('home/home.html')
 	#extract authenticated user to pass to home.html
 	#if request.user.is_authenticated:
-		#user = request.user
+	#	user = request.user
 	user = 'James'
 	context = {
-		'user' = user
+		'user' : user
 	}
 	return HttpResponse(template.render(context,request))
 

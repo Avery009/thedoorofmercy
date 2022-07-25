@@ -9,12 +9,12 @@
 <h1>Testimonials</h1>
 </div>
 <div class="jumbotron text-center">
-<a href='/testimonials/enter/' align="right" class="btn btn-success btn-block">Share Your Testimony</a>
+<a href='enter/' align="right" class="btn btn-success btn-block">Share Your Testimony</a>
 </div>
 {% if testimonial_list %}
 {% for testimonial in testimonial_list %}
 <div class="alert alert-secondary">
-<h3><a href='/testimonials/view/{{ testimonial.testimonial_id }}'>{{ testimonial.testimonial_title }}</a><a href='/testimonials/view/{{ testimonial.testimonial_id }}'><button align="right" type="button" class="btn btn-success float-right">View Testimonial</button></a></h3>
+<h3><a href='view/{{ testimonial.testimonial_id }}'>{{ testimonial.testimonial_title }}</a><a href='view/{{ testimonial.testimonial_id }}'><button align="right" type="button" class="btn btn-success float-right">View Testimonial</button></a></h3>
 </div>
 {% endfor %}
 {% endif %}

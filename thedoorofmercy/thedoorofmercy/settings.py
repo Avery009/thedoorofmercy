@@ -25,7 +25,12 @@ SECRET_KEY = 'django-insecure-p72m+y#wgi*@@%@#zpj3^it7le9t)0vbo5(cnz@upt6t74-gto
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+	'127.0.0.1',
+	'avery492828.pythonanywhere.com',
+	'www.thedoorofmercy.education',
+	'thedoorofmercy.education',
+]
 
 
 # Application definition
@@ -37,6 +42,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+	#'Alms',
+	#'BibleQuiz',
+	#'BibleStudy',
+	'Catalog',
+	'Home',
+	#'Hymns',
+	#'Miracles',
+	'Prayers',
+	#'Testimonials',
+	'Thanksgivings',
+	'bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +70,7 @@ ROOT_URLCONF = 'thedoorofmercy.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -105,7 +121,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'EST'
 
 USE_I18N = True
 
